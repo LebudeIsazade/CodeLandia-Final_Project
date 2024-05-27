@@ -1,0 +1,144 @@
+header{
+    background: url("../image/hero-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 700px;
+    .bgBLack{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(24, 0, 0, 0.6);
+    }
+    .bottom-line{
+        border-bottom: 1px solid white;
+        position: sticky;
+    }
+    .header_container{
+        padding: 30px;
+        .header_top{
+            position: sticky;
+            margin: 0 auto;
+            @include flex( $justify:space-between, $align:center);
+            .logo{
+                color: #FFFFFF;
+                @include font($medium:26px,$var:700,$normal:1.2rem);
+            }
+            .nav_class{
+            .navbar{
+                @include flex($gap: 40px, $justify:space-between);
+                @include font($medium:18px,$var:700,$normal:1.2rem);
+
+                @include tablet(){
+                    display: none;
+                }
+           li{
+            a{
+               color: #FFFFFF;
+            }
+            a:hover{
+                color: #ff6e4e;
+                transition: 0.5s ease;
+            }
+           }
+           #home_title{
+            a{
+                color: #ff6e4e;
+            }
+           }
+            }
+            .burger-menu{
+                display: none;
+                padding: 10px;
+                border: 1px solid #ff6e4e;
+                text-align: center;
+
+                i{
+                    width: 18px;
+                    height: 18px;
+                    color: #ff6e4e;
+                }
+
+                @include tablet(){
+                    display: initial;
+                }
+            }
+        }
+        .cart{
+            @include tablet(){
+                display: none;
+            }
+                a{
+                    color: #ff6e4e;
+                }
+        }
+        }
+        .hamburger{
+            display: none;
+            cursor: pointer;
+        
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+    }
+
+        
+    }
+    .header_bottom{
+        margin-top: 100px;
+        text-align: center;
+         width: 70%;
+         transform: translateX(22%);
+         @include mobile(){
+            margin-top: 50px;
+         }
+        h6{
+            color: #FFFFFF;
+            position: sticky;
+            text-transform: uppercase;
+            @include font($medium:14px,$var:500,$normal:1.5em);
+
+        }
+        h1{
+            // width: 800px;
+            text-align: center;
+            margin: 0 auto;
+            color: #FFFFFF;
+            position: sticky;
+            @include font($medium:70px,$var:700,$normal:1.10em);
+            @include tablet(){
+                font-size:40px ;
+            }
+            @include mobile(){
+                font-size:30px ;
+            }
+        }
+        p{
+            color: #FFFFFF;
+            position: sticky;
+            margin: 0 auto;
+            @include font($medium:18px,$var:400,$normal:1.65em);
+        }
+        button{
+            position: sticky;
+            color: #FFFFFF;
+            background-color: #ff6e4e;
+            padding: 15px 43px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 30px;
+            @include font($medium:16px,$var:400,$normal:1.65em);
+        }
+        button:hover{
+            background-color: #f37f64;
+        }
+    }
+}

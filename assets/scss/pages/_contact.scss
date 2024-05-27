@@ -1,0 +1,54 @@
+.contact{
+    background: url("../image/about-hero-bg.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 500px;
+    .bgBLack{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(24, 0, 0, 0.6);
+}
+.bottom-line{
+    .header_container{
+        .header_top{
+            .nav_class{
+                .navbar{
+                    .about_color{
+                        a{
+                            color: #ff6e4e;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header_bottom{
+    h1{
+        width: 800px;
+    }
+    p{
+        width: 800px;
+    }
+}
+}
+
+.contact_section{
+    padding: 100px 70px;
+    .contact_container {
+            @include flex($flex:flex, $direction:row, $justify:center, $align:center, $gap:0);
+
+        .contact_address{
+            h2{
+              @include font($medium:48px,$var:700,$normal:1.15em);
+            }
+            p{
+                color: #6B6262;
+                @include font($medium:24px,$var:inherit,$normal:1.15em);
+            }
+        }
+}
+}

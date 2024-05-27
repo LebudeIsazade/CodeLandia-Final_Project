@@ -1,0 +1,70 @@
+footer{
+    background-color: #FEF7F5;
+    padding-top: 50px;
+    .footer-container{
+        padding-bottom: 60px;
+       width: 1140px; 
+       margin: 0 auto;
+       @include flex($flex:flex, $direction:row, $justify:center, $align:center, $gap:15%);
+       .footer-content{
+        width: 34%;
+        h2{
+            @include font($medium:24px,$var:700,$normal:1.3em);
+            color: #180000;
+            margin-bottom: 15px;
+        }
+        .flower_foo_text{
+            width: 500px;
+            @include font($medium:18px,$var:400,$normal:1.65em);
+        }
+        ul{
+            li{
+                a{
+                    @include font($medium:18px,$var:400,$normal:1.65em);
+                    color: #0e0d0d;
+                    transition: 0.3s ease;
+
+                }
+                a:hover{
+                    color: #FF6e4e;
+                }
+            }
+            .footer_home{
+                a{
+                    color: #FF6e4e;
+                }
+            }
+        }
+        p{
+            @include font($medium:18px,$var:400,$normal:1.65em);
+            color: #0e0d0d;  
+        }
+       }
+    }
+    .top_line{
+        border-bottom: 1px solid rgb(226, 221, 221);
+    }
+    .bottom-bar{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 35px 90px;
+       p{
+        @include font($medium:19px,$var:400,$normal:1.65em);
+        color: #6b6262;
+       }
+       .sosial_media{
+        display: flex;
+        list-style: none;
+        gap: 15px;
+        li{
+            a{
+                color: black;
+            }
+            a:hover{
+                color: #FF6e4e;
+            }
+        }
+       }
+    }
+}

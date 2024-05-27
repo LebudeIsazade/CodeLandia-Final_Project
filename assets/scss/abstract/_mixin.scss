@@ -1,0 +1,23 @@
+@mixin flex($flex:flex, $direction:row, $justify:stretch, $align:start, $gap:0){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+@mixin font($medium,$var,$normal){
+    font-size:  $medium;
+    font-weight: $var;
+    line-height: $normal;
+}
+@mixin mobile(){
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin tablet (){
+  @media only screen and (max-width:990px){
+    @content
+  }
+}
